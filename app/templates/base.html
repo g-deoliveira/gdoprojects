@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>gdoProjects</title>
+        <style>
+        div.a {
+            margin-left: 30px;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>Guilherme de Oliveira</h2>
+        </div>
+        <div class="a">
+            <a href="{{ url_for('index') }}">Home</a> <br>
+            <br>
+        </div>    
+        <hr>
+        <br>
+        {% block content %}{% endblock %}
+    </body>
+</html>

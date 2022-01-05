@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Welcome!</h2>
+    <div>
+        <p>This website will allow me to share various projects that I've tinkered with during my own time.</p>
+        <ul>
+            <li>
+                <a href="{{ url_for('newsworthy') }}">Newsworthy</a> <br>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
