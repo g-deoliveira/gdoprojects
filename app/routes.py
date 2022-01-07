@@ -22,7 +22,7 @@ def newsworthy():
         payload = {'url':url}
 
         result = boto3_client.invoke(
-            FunctionName='is-website-newsworthy',
+            FunctionName='is-newsworthy',
             InvocationType='RequestResponse',
             Payload=json.dumps(payload)
         )
